@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex flex-row items-center justifty-between h-28 w-full">
+        <nav className="w-full flex flex-row items-center justify-between h-20 px-10 bg-slate-900">
           <a href="/">
             <Image
               src="/town-of-greenville-logo-white.svg"
@@ -27,9 +27,13 @@ export default function RootLayout({
               width={120}
               height={24}
               priority
-            /></a>
-            <a href="/application">New Application</a>
-            <a href="/disposal">Disposal</a>
+            />
+            </a>
+            <div>
+              <a href="/application" className="mx-10">New Application</a>
+              <a href="/disposal">Create Disposal</a>
+            </div>
+            
             </nav>
         {children}
         </body>
