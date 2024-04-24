@@ -25,7 +25,7 @@ export default function StickerApplication() {
                     <input className="p-2 w-60 dark:bg-slate-800" type="text" id="street" name="city" required={true} minLength={2} placeholder="Greenville" size={10}/>
                 </div>
             </div>
-            <h3 className="mx-6 mt-6 font-bold">Vehicle</h3>
+            <h3 className="mx-6 mt-6 font-bold text-white mb-4">Vehicle</h3>
             <div className="flex flex-row justify-between">
                 <div className="flex flex-col ml-6 mb-2">
                     <label htmlFor="address">Make</label>
@@ -58,6 +58,18 @@ export default function StickerApplication() {
                     </select>
                 </div>
             </div>
+            <h3 className="mx-6 mt-6 font-bold text-white mb-4">Sticker</h3>
+            <div className="flex flex-row justify-between items-center">
+                <div className="flex flex-col ml-6 mb-2">
+                    <label htmlFor="address">Registration #</label>
+                    <input className="p-2 w-60 dark:bg-slate-800" type="text" id="street" name="street" required={true} minLength={2} placeholder="example: 215" size={10}/>
+                </div>
+              
+                    <button className="border px-4 py-2 hover:scale-105">Submit</button>
+
+                
+            </div>
+            
         </div>
     )
 }
