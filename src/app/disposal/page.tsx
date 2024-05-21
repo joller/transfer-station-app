@@ -30,8 +30,10 @@ export default function Disposal() {
                         <input className="p-2 w-40 dark:bg-slate-800" type="text" id="street" name="sticker" required={true} minLength={2} placeholder="# 12345" size={10}/>
                     </div>
                 </div>
-                <button className="border px-4 py-2 hover:scale-105">Find Customer</button>
-                <a href="/application" className="border px-4 py-2 hover:scale-105 mx-6">Add New Customer</a>
+                <div className="flex flex-row justify-end mt-4">
+                    <a href="/application" className="border px-4 py-2 hover:scale-105 rounded-md  font-medium">Add New Customer</a>
+                     <button className="border px-4 py-2 hover:scale-105 mx-6 rounded-md bg-white text-slate-950 font-medium">Find Customer</button>
+                </div>
             </form>
           </div>
     </main>

@@ -30,7 +30,8 @@ export default function RootLayout({
             />
             </a>
             <div>
-              <a href="/application" className="mx-10">New Application</a>
+              <a href="/application" className="mr-10">Customer Lookup</a>
+              <a href="/application" className="mr-10">Assign New Sticker</a>
               <a href="/disposal">Create Disposal</a>
             </div>
             
