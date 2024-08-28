@@ -7,7 +7,8 @@ export default function Customers() {
    
    <div className="flex flex-col text-cyan-900 dark:text-white w-full max-w-xl my-6 ">
             <h1 className="text-2xl text-center weight-bold text-white">Customer Lookup</h1>
-            <div className="flex flex-row justify-between mt-10">
+            <p className="text-md px-6 weight-bold text-white mt-4">Search by name</p>
+            <div className="flex flex-row justify-between mt-1">
                 <div className="flex flex-col mx-6 my-2" >
                     <label htmlFor="first_name">First Name</label>
                     <input className="p-2 w-60 dark:bg-slate-800 mt-1 rounded-md" type="text" id="first_name" name="firstname" required={true} minLength={2} placeholder="First Name" size={10}/>
